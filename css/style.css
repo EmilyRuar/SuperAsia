@@ -57,7 +57,7 @@ p {
    ================================ */
 .hero-section {
   height: 70vh;
-  background: var(--amarillo);
+  background: url("../img/fondo_lr.jpg")center center/cover;
 
   display: flex;
   align-items: center;
@@ -181,4 +181,34 @@ footer a {
 }
 footer a:hover {
   color: var(--naranja);
+}
+
+/* ===============================
+   FONDOS LOGIN Y REGISTRO
+   =============================== */
+
+/* Fondo de Login */
+.bg-login {
+  background:url("../img/fondo_lr.jpg")center center/cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fondo de Registro */
+.bg-register {
+  background: url("../img/fondo_lr.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Para que las tarjetas resalten sobre el fondo */
+.auth-card {
+  background: rgba(255, 255, 255, 0.9); /* Blanco semi-transparente */
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
