@@ -56,8 +56,8 @@ p {
    HERO
    ================================ */
 .hero-section {
-  height: 70vh;
-  background: url("../img/fondo_lr.jpg")center center/cover;
+  height: 85vh;
+  background: url("../img/fondo_linterna.jpg")center center/cover;
 
   display: flex;
   align-items: center;
@@ -189,7 +189,7 @@ footer a:hover {
 
 /* Fondo de Login */
 .bg-login {
-  background:url("../img/fondo_lr.jpg")center center/cover;
+  background:url("../img/fondo_linterna.jpg")center center/cover;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -198,7 +198,7 @@ footer a:hover {
 
 /* Fondo de Registro */
 .bg-register {
-  background: url("../img/fondo_lr.jpg") no-repeat center center/cover;
+  background: url("../img/fondo_linterna.jpg") no-repeat center center/cover;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -216,4 +216,22 @@ footer a:hover {
 .historia-bg {
   background-color: #e73217; 
   color: white
+}
+
+.phone-mockup {
+  width: 260px;
+  height: 500px;
+  border: 12px solid #333;
+  border-radius: 40px;
+  padding: 10px;
+  background: #000;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.phone-mockup .screen {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
 }
