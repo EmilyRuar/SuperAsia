@@ -6,9 +6,7 @@ Aquí encontrarás **ramen, condimentos, bubble tea, snacks, dulces, bebidas y m
 ## 🌸 Características principales
 - 🛍️ Catálogo de productos asiáticos con fotos y descripciones.
 - 🔎 Buscador y filtros por categoría (ramen, condimentos, bebidas, etc.).
-- 🛒 Carrito de compras dinámico.
 - 👤 Registro e inicio de sesión de usuarios.
-- 💳 Proceso de compra fácil y seguro.
 - 📱 Diseño responsive (adaptado a móvil, tablet y desktop).
 
 ## 🛠️ Tecnologías utilizadas
