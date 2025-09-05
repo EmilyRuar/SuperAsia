@@ -1,82 +1,82 @@
 /* ================================
    PALETA DE COLORES SUPER ASIA
    ================================ */
+/* Definimos variables de colores que luego usamos en todo el CSS */
 :root {
-  --rojo: #E30A17;
-  --naranja: #FF6A00;
-  --amarillo: #FFD700;
-  --verde: #80CBC4;
-  --rosa: #FC00CB;
+  --rojo: #E30A17;             
+  --naranja: #FF6A00;         
+  --amarillo: #FFD700;         
+  --verde: #80CBC4;            
+  --rosa: #FC00CB;             
 
-  --texto-principal: #1A2B3C;
-  --texto-secundario: #555555;
-  --fondo-claro: #F9FAFB;
+  --texto-principal: #1A2B3C;  
+  --texto-secundario: #555555; 
+  --fondo-claro: #F9FAFB;     
 }
 
 /* ================================
    BASE
    ================================ */
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: var(--texto-principal);
-  background-color: var(--fondo-claro);
-  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;  
+  color: var(--texto-principal);          
+  background-color: var(--fondo-claro);   
+  line-height: 1.6;                       
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  color: var(--texto-principal);
+  font-weight: 700;                       
+  color: var(--texto-principal);         
 }
 
 p {
-  color: var(--texto-secundario);
+  color: var(--texto-secundario);         
 }
 
 /* ================================
-   NAVBAR
+   NAVBAR / BARRA DE NAVEGACIÓN
    ================================ */
 .navbar {
-  background-color: white;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  background-color: white;                    
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);     
 }
 .navbar .nav-link {
-  color: var(--texto-principal);
-  font-weight: 500;
+  color: var(--texto-principal);             
+  font-weight: 500;                          
 }
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-  color: var(--rojo);
+  color: var(--rojo);                       
 }
 .logo-img {
-  height: 60px;
-  margin-right: 10px;
+  height: 60px;                              
+  margin-right: 10px;                        
 }
 
 /* ================================
-   HERO
+   HERO / SECCIÓN PRINCIPAL
    ================================ */
 .hero-section {
-  height: 85vh;
-  background: url("../img/fondo_linterna.jpg")center center/cover;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 85vh;                                         
+  background: url("../img/fondo_linterna.jpg") center center/cover;  
+  display: flex;                                       
+  align-items: center;                                
+  justify-content: center;                            
   text-align: center;
 }
 .hero-section h1 {
-  font-size: 3rem;
+  font-size: 3rem;                                     
   font-weight: 700;
-  color: #fff;
+  color: #fff;                                        
 }
 .hero-section p {
-  color: rgba(255,255,255,0.85);
-  margin-bottom: 1.5rem;
+  color: rgba(255,255,255,0.85);                      
+  margin-bottom: 1.5rem;                              
 }
+
 .hero-nosotros {
-  height: 70vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)) ;
-  display: flex;
+  height: 70vh;                                     
+  background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)); 
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -86,19 +86,20 @@ p {
    BOTONES
    ================================ */
 .btn-primary {
-  background-color: var(--rojo);
-  border: none;
-  font-weight: 600;
+  background-color: var(--rojo);    
+  border: none;                     
+  font-weight: 600;                
 }
 .btn-primary:hover {
-  background-color: #b50814;
+  background-color: #b50814;        
 }
 
 .btn-amarillo {
-  background-color: #FFD700;
+  background-color: #FFD700;        
   border: none;
-  font-weight: 1000;
+  font-weight: 1000;               
 }
+
 .btn-warning {
   background-color: var(--amarillo);
   color: var(--texto-principal);
@@ -106,28 +107,28 @@ p {
   border: none;
 }
 .btn-warning:hover {
-  background-color: #e6c200;
+  background-color: #e6c200;        
 }
 
 /* ================================
-   TARJETAS
+   TARJETAS (PRODUCTOS / CATEGORÍAS)
    ================================ */
 .category-card, .product-card {
-  border: none;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;                                        
+  border-radius: 16px;                                 
+  overflow: hidden;                                    
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);            
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: #fff;
-  padding: 15px;
+  flex-direction: column;                             
+  justify-content: space-between;                     
+  background: #fff;                                    
+  padding: 15px;                                     
 }
 .category-card:hover, .product-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-}:single-button
+  transform: translateY(-6px);                         
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);           
+}
 
 .card-title {
   font-weight: 600;
@@ -146,41 +147,41 @@ p {
    SECCIONES
    ================================ */
 section {
-  padding: 4rem 0;
+  padding: 4rem 0;            
 }
 #ofertas {
-  background-color: var(--fondo-claro);
+  background-color: var(--fondo-claro);  
 }
 #nosotros p {
-  font-size: 1.05rem;
+  font-size: 1.05rem;                      
 }
 
 /* ================================
    FORMULARIO
    ================================ */
 form .form-control {
-  border-radius: 10px;
-  border: 1px solid #ddd;
+  border-radius: 10px;        
+  border: 1px solid #ddd;      
 }
 form button {
   border-radius: 10px;
-  font-weight: 600;
+  font-weight: 600;           
 }
 
 /* ================================
    FOOTER
    ================================ */
 footer {
-  background-color: var(--texto-principal);
+  background-color: var(--texto-principal); 
   color: #fff;
   font-size: 0.9rem;
 }
 footer a {
-  color: var(--amarillo);
-  text-decoration: none;
+  color: var(--amarillo);     
+  text-decoration: none;        
 }
 footer a:hover {
-  color: var(--naranja);
+  color: var(--naranja);        
 }
 
 /* ===============================
@@ -189,7 +190,7 @@ footer a:hover {
 
 /* Fondo de Login */
 .bg-login {
-  background:url("../img/fondo_linterna.jpg")center center/cover;
+  background:url("../img/fondo_linterna.jpg") center center/cover;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -205,26 +206,30 @@ footer a:hover {
   align-items: center;
 }
 
-/* Para que las tarjetas resalten sobre el fondo */
+/* Tarjeta blanca para login/registro */
 .auth-card {
-  background: rgba(255, 255, 255, 0.9); /* Blanco semi-transparente */
+  background: rgba(255, 255, 255, 0.9); 
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
+/* Fondo de historia / sección especial */
 .historia-bg {
   background-color: #e73217; 
-  color: white
+  color: white;
 }
 
+/* ================================
+   MOCKUP DE TELÉFONO
+   ================================ */
 .phone-mockup {
   width: 260px;
   height: 500px;
   border: 12px solid #333;
   border-radius: 40px;
   padding: 10px;
-  background: #000;
+  background: #000000;               
   position: relative;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
@@ -233,5 +238,5 @@ footer a:hover {
   width: 100%;
   height: 100%;
   border-radius: 30px;
-  overflow: hidden;
+  overflow: hidden;              
 }

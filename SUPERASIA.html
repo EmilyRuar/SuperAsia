@@ -5,93 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Super Asia - Tu Tienda de Productos Asiáticos</title>
 
- 
+  <!-- CSS de Bootstrap para estilos predefinidos y responsivos -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Iconos de Bootstrap para usar íconos como carrito, estrella, etc. -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
- 
+  <!-- Fuente Montserrat desde Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- ==================== HEADER  ==================== -->
   <header class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container">
+      <!-- Logo de la tienda, click para volver al inicio -->
       <a class="navbar-brand" href="SUPERASIA.html">
-        <img src="img/logo_web.png" alt="Super Asia Logo" class="logo-img" >
-       
+        <img src="img/logo_web.png" alt="Super Asia Logo" class="logo-img">
       </a>
+
+      <!-- Botón para menú responsive -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- Menú de navegación -->
       <div class="collapse navbar-collapse" id="navbarNav">
-       <ul class="navbar-nav ms-auto">
-  <li class="nav-item"><a class="nav-link active" href="SUPERASIA.html">Inicio</a></li>
-  <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-  <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
-  <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-  <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-  <li class="nav-item"><a class="nav-link" href="login.html"><button type="button" class="btn btn-primary btn-sm">Iniciar Sesión</button> </a></li>
-  <li class="nav-item"><a class="nav-link" href="registro.html"><button type="button" class="btn btn-secondary btn-sm">Crear Cuenta</button></a></li>
- <li class="nav-item"><a class="nav-link" href="#">🛒</a></li>
+        <ul class="navbar-nav ms-auto"> 
+          <li class="nav-item"><a class="nav-link active" href="SUPERASIA.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <!-- Botones de sesión y registro -->
+          <li class="nav-item"><a class="nav-link" href="login.html"><button type="button" class="btn btn-primary btn-sm">Iniciar Sesión</button></a></li>
+          <li class="nav-item"><a class="nav-link" href="registro.html"><button type="button" class="btn btn-secondary btn-sm">Crear Cuenta</button></a></li>
+          <!-- Icono de carrito -->
+          <li class="nav-item"><a class="nav-link" href="#">🛒</a></li>
         </ul>
       </div>
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- ==================== HERO  ==================== -->
   <section id="hero" class="hero-section text-center d-flex align-items-center justify-content-center">
     <div class="container">
+      <!-- Título principal -->
       <h1 class="display-3 text-white">¡Explora los Sabores de Super Asia!</h1>
+      <!-- Descripción breve -->
       <p class="lead text-white-90">Productos auténticos y deliciosos directamente a tu puerta.</p>
+      <!-- Botón que lleva a la sección de productos -->
       <a href="productos.html" class="btn btn-primary btn-lg mt-3">Ver Productos Ahora</a>
-    <div class="row align-items-center">
-        
-        <div class="col-md-6" style="display: flex; gap: 10px;">        
     </div>
   </section>
 
-  <!-- PRODUCTOS -->
+  <!-- ==================== SECCIÓN DE CATEGORÍAS ==================== -->
   <section id="productos" class="py-5">
     <div class="container">
       <h2 class="text-center mb-4">Nuestras Categorías</h2>
       <div class="row text-center">
+        <!-- Cada categoría es una card  -->
         <div class="col-md-4 mb-4">
           <div class="card category-card">
             <img src="img/categoria_fideos.png" class="card-img-top" alt="Fideos y Sopas">
             <div class="card-body">
               <h5 class="card-title">Fideos y Sopas</h5>
-              <!-- Estrellas -->
-            <p class="text-warning mb-2">
-              &#9733; &#9733; &#9733; &#9733; &#9734; 
-            </p>
+              <!-- Estrellas de valoración -->
+              <p class="text-warning mb-2">&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+              <!-- Botón para explorar -->
               <a href="productos.html" class="btn btn-primary">Explorar</a>
             </div>
           </div>
         </div>
+        <!-- Segunda categoría -->
         <div class="col-md-4 mb-4">
           <div class="card category-card">
-            <img src="img/categoria_condimentos.jpg" class="card-img-top" alt="Sushi">
+            <img src="img/categoria_condimentos.jpg" class="card-img-top" alt="Condimentos">
             <div class="card-body">
               <h5 class="card-title">Condimentos</h5>
-              <p class="text-warning mb-2">
-              &#9733; &#9733; &#9733; &#9734; &#9734; <!-- 3 estrellas llenas, 2 vacías -->
-            </p>
+              <p class="text-warning mb-2">&#9733; &#9733; &#9733; &#9734; &#9734;</p>
               <a href="productos.html" class="btn btn-primary">Explorar</a>
             </div>
           </div>
         </div>
+        <!-- Tercera categoría -->
         <div class="col-md-4 mb-4">
           <div class="card category-card">
             <img src="img/categoria_snacks.jpg" class="card-img-top" alt="Snacks">
             <div class="card-body">
               <h5 class="card-title">Snacks & Golosinas</h5>
-              <p class="text-warning mb-2">
-              &#9733; &#9733; &#9733; &#9733; &#9733; <!-- 5 estrellas -->
-            </p>
-              <a href="productos.html"href="#" class="btn btn-primary">Explorar</a>
+              <p class="text-warning mb-2">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+              <a href="productos.html" class="btn btn-primary">Explorar</a>
             </div>
           </div>
         </div>
@@ -99,13 +105,12 @@
     </div>
   </section>
 
-  <!-- OFERTAS -->
+  <!-- ==================== SECCIÓN DE OFERTAS ==================== -->
   <section id="ofertas" class="bg-light py-5">
     <div class="container">
       <h2 class="text-center mb-4">Productos Destacados </h2>
       <div class="row">
-        <br>
-        <!-- Producto 1 -->
+        <!-- Cada producto destacado -->
         <div class="col-md-3 mb-4">
           <div class="card product-card h-100">
             <img src="img/oferta_ramen.png" class="card-img-top" alt="Ramen Instantáneo">
@@ -113,7 +118,8 @@
               <h5 class="card-title">Ramen Instantáneo Coreano</h5>
               <p class="card-text text-muted">Picante y delicioso</p>
               <p class="card-price fs-4 fw-bold text-primary">$2.990</p>
-              <a href="#" class="btn btn-primary add-cart">Añadir al Carrito</a>
+              <!-- Botón añadir al carrito -->
+              <a href="#" class="btn btn-primary add-cart" data-product="Ramen Instantáneo Coreano" data-price="2990">Añadir al Carrito</a>
             </div>
           </div>
         </div>
@@ -122,13 +128,10 @@
           <div class="card product-card h-100">
             <img src="img/oferta_mochi.png" class="card-img-top" alt="Mochis">
             <div class="card-body text-center">
-                <br>
-                
               <h5 class="card-title">Mochis Japoneses</h5>
               <p class="card-text text-muted">Dulces y suaves</p>
-              <br>
               <p class="card-price fs-4 fw-bold text-primary">$4.500</p>
-              <a href="#" class="btn btn-primary add-cart">Añadir al Carrito</a>
+              <a href="#" class="btn btn-primary add-cart" data-product="Mochis Japoneses" data-price="4500">Añadir al Carrito</a>
             </div>
           </div>
         </div>
@@ -139,9 +142,8 @@
             <div class="card-body text-center">
               <h5 class="card-title">Salsa de Soja Kikkoman</h5>
               <p class="card-text text-muted">Esencial para tus platos</p>
-              <br>
               <p class="card-price fs-4 fw-bold text-primary">$3.590</p>
-              <a href="#" class="btn btn-primary add-cart">Añadir al Carrito</a>
+              <a href="#" class="btn btn-primary add-cart" data-product="Salsa de Soja Kikkoman" data-price="3590">Añadir al Carrito</a>
             </div>
           </div>
         </div>
@@ -150,132 +152,120 @@
           <div class="card product-card h-100">
             <img src="img/oferta_boba.jpg" class="card-img-top" alt="Bubble Tea">
             <div class="card-body text-center">
-                <br>
               <h5 class="card-title">Kit de Bubble Tea</h5>
               <p class="card-text text-muted">Prepara tu propia bebida</p>
               <p class="card-price fs-4 fw-bold text-primary">$8.990</p>
-              <a href="#" class="btn btn-primary add-cart">Añadir al Carrito</a>
+              <a href="#" class="btn btn-primary add-cart" data-product="Kit de Bubble Tea" data-price="8990">Añadir al Carrito</a>
             </div>
           </div>
         </div>
       </div>
-      <br>
       <div class="text-center mt-4">
+        <!-- Botón para ver todas las ofertas -->
         <a href="ofertas.html" class="btn btn-amarillo btn-lg">Ver Todas las Ofertas</a>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIOS -->
-<section id="testimonios" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4">Lo que dicen nuestros clientes</h2>
-    <div class="row text-center">
-      
-      <!-- Testimonio 1 -->
-      <div class="col-md-4 mb-4">
-        <div class="card testimonial-card p-3">
-          <div class="card-body">
-            <p class="card-text">"Excelente calidad y entrega rápida. Totalmente recomendable."</p>
-            <p class="text-warning mb-2">
-              &#9733; &#9733; &#9733; &#9733; &#9733; <!-- 5 estrellas -->
-            </p>
-            <h6 class="card-subtitle mt-2">- María López</h6>
+  <!-- ==================== SECCIÓN DE TESTIMONIOS ==================== -->
+  <section id="testimonios" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Lo que dicen nuestros clientes</h2>
+      <div class="row text-center">
+        <!-- Testimonio 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card testimonial-card p-3">
+            <div class="card-body">
+              <p class="card-text">"Excelente calidad y entrega rápida. Totalmente recomendable."</p>
+              <p class="text-warning mb-2">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+              <h6 class="card-subtitle mt-2">- María López</h6>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- Testimonio 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="card testimonial-card p-3">
-          <div class="card-body">
-            <p class="card-text">"Muy buena atención al cliente y productos innovadores."</p>
-            <p class="text-warning mb-2">
-              &#9733; &#9733; &#9733; &#9733; &#9734; <!-- 4 estrellas -->
-            </p>
-            <h6 class="card-subtitle mt-2">- Carlos Méndez</h6>
+        <!-- Testimonio 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card testimonial-card p-3">
+            <div class="card-body">
+              <p class="card-text">"Muy buena atención al cliente y productos innovadores."</p>
+              <p class="text-warning mb-2">&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+              <h6 class="card-subtitle mt-2">- Carlos Méndez</h6>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- Testimonio 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="card testimonial-card p-3">
-          <div class="card-body">
-            <p class="card-text">"Gran variedad de productos y muy buenos precios."</p>
-            <p class="text-warning mb-2">
-              &#9733; &#9733; &#9733; &#9734; &#9734; <!-- 3 estrellas -->
-            </p>
-            <h6 class="card-subtitle mt-2">- Fernanda Ruiz</h6>
+        <!-- Testimonio 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card testimonial-card p-3">
+            <div class="card-body">
+              <p class="card-text">"Gran variedad de productos y muy buenos precios."</p>
+              <p class="text-warning mb-2">&#9733; &#9733; &#9733; &#9734; &#9734;</p>
+              <h6 class="card-subtitle mt-2">- Fernanda Ruiz</h6>
+            </div>
           </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- DESTACADO SUPER ASIA -->
-<section id="destacado" class="py-5 bg-light text-center">
-  <div class="container">
-    <h2 class="mb-4">Descubre la experiencia Super Asia</h2>
-    <p class="mb-5">Explora sabores, cultura y productos únicos de Asia en la palma de tu mano</p>
-
-    <div class="row align-items-center">
-      <!-- Columna izquierda -->
-      <div class="col-md-4 mb-4">
-        <div class="mb-5">
-          <i class="bi bi-bag-check text-primary fs-1"></i>
-          <h5 class="mt-3">Compra Fácil</h5>
-          <p>Elige tus productos favoritos y recíbelos en casa.</p>
-        </div>
-        <div>
-          <i class="bi bi-heart text-danger fs-1"></i>
-          <h5 class="mt-3">Sabores Auténticos</h5>
-          <p>Productos cuidadosamente seleccionados de Asia.</p>
-        </div>
-      </div>
-
-      <!-- Mockup en el centro -->
-      <div class="col-md-4 mb-4">
-        <div class="phone-mockup mx-auto">
-          <div class="screen">
-            <!-- Video dentro del mockup -->
-            <video autoplay muted loop playsinline class="w-100 h-100" style="border-radius:20px;">
-              <source src="img/video_superasia.mp4" type="video/mp4">
-              Tu navegador no soporta video.
-            </video>
-          </div>
-        </div>
-      </div>
-
-      <!-- Columna derecha -->
-      <div class="col-md-4 mb-4">
-        <div class="mb-5">
-          <i class="bi bi-truck text-success fs-1"></i>
-          <h5 class="mt-3">Envío Rápido</h5>
-          <p>Recibe tu pedido en la puerta de tu hogar.</p>
-        </div>
-        <div>
-          <i class="bi bi-star text-warning fs-1"></i>
-          <h5 class="mt-3">+500 Clientes Felices</h5>
-          <p>Confían en Super Asia para descubrir nuevos sabores.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- ==================== SECCIÓN DESTACADO / MOCKUP CON VIDEO ==================== -->
+  <section id="destacado" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="mb-4">Descubre la experiencia Super Asia</h2>
+      <p class="mb-5">Explora sabores, cultura y productos únicos de Asia en la palma de tu mano</p>
+      <div class="row align-items-center">
+        <!-- Columna izquierda: iconos y beneficios -->
+        <div class="col-md-4 mb-4">
+          <div class="mb-5">
+            <i class="bi bi-bag-check text-primary fs-1"></i>
+            <h5 class="mt-3">Compra Fácil</h5>
+            <p>Elige tus productos favoritos y recíbelos en casa.</p>
+          </div>
+          <div>
+            <i class="bi bi-heart text-danger fs-1"></i>
+            <h5 class="mt-3">Sabores Auténticos</h5>
+            <p>Productos cuidadosamente seleccionados de Asia.</p>
+          </div>
+        </div>
 
-  <!-- NOSOTROS -->
+        <!-- Columna central: mockup de teléfono con video -->
+        <div class="col-md-4 mb-4">
+          <div class="phone-mockup mx-auto">
+            <div class="screen">
+              <video autoplay muted loop playsinline class="w-100 h-100" style="border-radius:20px;">
+                <source src="img/video_superasia.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna derecha: más beneficios -->
+        <div class="col-md-4 mb-4">
+          <div class="mb-5">
+            <i class="bi bi-truck text-success fs-1"></i>
+            <h5 class="mt-3">Envío Rápido</h5>
+            <p>Recibe tu pedido en la puerta de tu hogar.</p>
+          </div>
+          <div>
+            <i class="bi bi-star text-warning fs-1"></i>
+            <h5 class="mt-3">+500 Clientes Felices</h5>
+            <p>Confían en Super Asia para descubrir nuevos sabores.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECCIÓN NOSOTROS ==================== -->
   <section id="nosotros" class="hero-nosotros text-center d-flex align-items-center justify-content-center">
     <div class="container">
       <h2 class="text-center mb-4">Sobre nosotros</h2>
       <div class="row align-items-center">
         <div class="col-md-6">
-          <img src="img/sobre_super_asia.png" alt="Super Asia Illustration" class="img-fluid rounded shadow"  >
+          <!-- Imagen ilustrativa -->
+          <img src="img/sobre_super_asia.png" alt="Super Asia Illustration" class="img-fluid rounded shadow">
         </div>
         <div class="col-md-6">
+          <!-- Texto descriptivo -->
           <p class="lead mt-3 mt-md-0">En <b>Super Asia</b>, nos apasiona acercarte la auténtica experiencia culinaria y cultural de Asia.</p>
           <p>Desde fideos instantáneos picantes hasta dulces mochis y salsas tradicionales, seleccionamos cuidadosamente cada producto para garantizar la máxima calidad y sabor.</p>
           <p>¡Únete a la aventura con Super Asia y descubre un mundo de sabores!</p>
@@ -284,39 +274,39 @@
     </div>
   </section>
 
-<!-- CONTACTO -->
-<section id="contacto" class="bg-light py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Contáctanos</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <form id="form-contacto">
-          <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre" required>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="tu@correo.com" required>
-          </div>
-          <div class="mb-3">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-        </form>
+  <!-- ==================== SECCIÓN CONTACTO ==================== -->
+  <section id="contacto" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contáctanos</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <!-- Formulario de contacto -->
+          <form id="form-contacto">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="tu@correo.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+          </form>
 
-        <!-- Mensaje de éxito -->
-        <div id="mensaje-exito" class="alert alert-success mt-3 text-center" style="display: none;">
-          ¡Formulario enviado correctamente!
+          <!-- Mensaje de éxito -->
+          <div id="mensaje-exito" class="alert alert-success mt-3 text-center" style="display: none;">
+            ¡Formulario enviado correctamente!
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-  <!-- FOOTER -->
+  <!-- ==================== FOOTER ==================== -->
   <footer class="btn-secondary text-white py-4">
     <div class="container text-center">
       <p style="color: white;">&copy; 2025 Super Asia. Todos los derechos reservados.</p>
@@ -328,7 +318,10 @@
     </div>
   </footer>
 
+  <!-- ==================== SCRIPTS ==================== -->
+  <!-- JS de Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS  -->
   <script src="js/script.js"></script>
 </body>
 </html>
